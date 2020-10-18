@@ -19,12 +19,12 @@ public class Abstract_Class {
     @BeforeSuite
     public void setPrecondition(){
         //set the driver here
-        driver = Reusable_Methods_Loggers.getDriver();
+        //driver = Reusable_Methods_Loggers.getDriver();
         //set the report path here
         reports = new ExtentReports("src/main/java/HTML_Report/AutomationReport.html",true);
     }//end of before suite
 
-    //to be able to pick up the name of your test classes dynamically we need to use beforemethod
+    //to be able to pick up the name of your test classes dynamically we need to use beforeMethod
     @BeforeMethod
     public void captureTestName(Method methodName){
         logger = reports.startTest(methodName.getName());

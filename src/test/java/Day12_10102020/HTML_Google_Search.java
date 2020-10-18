@@ -18,7 +18,7 @@ public class HTML_Google_Search {
     ExtentTest logger;
     @BeforeSuite
     public void setDriver(){
-        driver = Reusable_Methods("src/main/java/HTML_Report/AutomationReport.html",true);
+        driver = new Reusable_Methods("src/main/java/HTML_Report/AutomationReport.html",true);
 
     }//end of before suite
 
